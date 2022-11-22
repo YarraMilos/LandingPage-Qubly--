@@ -12,7 +12,7 @@ function HeaderMenuFunction(event) {
         Hamb.classList.toggle('__opened__burger__hamb')
         body.classList.toggle('opened__burger__body__padding')
     }
-    if (!event.target.closest('.hamb')) {
+    if (!event.target.closest('.burger__menu__list')) {
         burgerMenu.classList.remove('__opened__burger')
         Hamb.classList.remove('__opened__burger__hamb')
         body.classList.remove('opened__burger__body__padding')
