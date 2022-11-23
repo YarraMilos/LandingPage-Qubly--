@@ -492,6 +492,9 @@ body {
     .ForProductTeams__image {
         margin-right: 0;
     }
+    .ForProductTeams {
+        margin-top: -100px;
+    }
 }
 
 /*________________________________*/
