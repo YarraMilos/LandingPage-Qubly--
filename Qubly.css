@@ -32,7 +32,6 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
 }
 
 .container {
@@ -110,6 +109,10 @@ body {
 .menu__link:hover {
     color: #6a00ff;
 }
+.menu__link:active {
+    opacity: 0.7;
+}
+
 
 
 .menu__link__button {
@@ -119,11 +122,16 @@ body {
     border-radius: 23px;
     margin-right: 0;
     transition: background-color 0.3s ease;
+    
 }
 .menu__link__button:hover {
     background-color: #722ED1;
     color: white;
 }
+.menu__link__button:active {
+    color: #cccccc;
+}
+
 /*Burger__Menu__Elments*/
 
 
@@ -432,6 +440,9 @@ body {
     .WhyQubly__features {
         margin-top: 40px;
     }
+    .WhyQubly {
+        margin-top: 50px;
+    }
 }
 
 
@@ -493,7 +504,7 @@ body {
         margin-right: 0;
     }
     .ForProductTeams {
-        margin-top: -150px;
+        margin-top: -155px;
     }
 }
 
@@ -531,113 +542,350 @@ body {
 
 /*________________________________________________*/
 
-.last__text {
+.Testimonial {
     margin-top: 100px;
     margin-bottom: 100px;
+    background-image: linear-gradient(#faf3ff, #f0f8ff);
+
+}
+.Testimonial__container {
+    padding: 100px 15px;
 }
 
-.last__text__p {
+.Testimonial__text {
     font-size: 24px;
     font-weight: 500;
     line-height: 32px;
     letter-spacing: 0em;
     text-align: center;
+    margin-bottom: 32px;    
+}
+
+
+.Testimonial__profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 64px;
+}
+.Testimonial__profile__img {
+    margin-bottom: 32px;
+}
+.Testimonial__profile__name {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.Testimonial__block__line {
+    width: 100%;
+    height: 1px;
+    background-color: #DEC9FA;
+    margin-bottom: 32px;
+}
+
+.Clients__logos {
+    width: 100%;
+
+}
+
+.Clients__logos__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     
 }
 
-/* .footer {
-    margin-top: 300px;
-} */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media (max-width:870px) {
+    .Clients__logos__body {
+        display: grid;
+        grid-template-columns: repeat(3, 150px);
+        row-gap: 40px;
+        column-gap: 40px;
+
+    }
+    .Clients__logos__container {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+}
+@media (max-width:600px) {
+    .Clients__logos__body {
+        grid-template-columns: 1fr 1fr;
+    }
+    .Clients__logo img {
+        width: 100%;
+    }
+    .Testimonial {
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+    .Testimonial__container {
+        padding: 40px 15px;
+    }
+}
+
+
+
+
+.Signup__block {
+    width: 100%;
+}
+.Signup__block__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding-right: 40px; */
+}
+
+.Signup__block__info {
+    width: 431px;
+}
+.Signup__block__info__main__text {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left;
+    max-width: 431px;
+    margin-bottom: 35px;
+}
+.Trusted-by__block {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #8989A2;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 50px;
+    text-align: center;
+
+
+}
+.Trusted-by__block div {
+    width: 100%;
+    height: 1px;
+    background-color: #8989A2;
+}
+
+.Signup__block__info__clients__logos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 40px;
+    column-gap: 40px;
+}
+
+
+
+
+.Signup__form__block {
+    position: relative;
+}
+.Signup__form__block__body {
+    width: 428px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 16px;
+    padding: 32px 40px;
+    box-shadow: 0 0 3px rgba(156, 156, 156, 0.726);
+    border-radius: 10px;
+    position: relative;
+    background-color: #ffffff;
+    z-index: 1;
+}
+
+.Signup__form__block__tittle {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.Signup__form__block__text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #ffffff;
+    padding: 12px 0;
+    border-radius: 6px;
+    background-color: rgb(98, 0, 255);
+    width: 100%;
+}
+.Signup__form__block__input {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #8989A2;
+    padding: 16px;
+    border-radius: 6px;
+    border: solid 1px #D9D9D9;
+    width: 100%;
+}
+.Or {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.btn__google__sign {
+    background-color: #0f5bff;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 10px;
+}
+.login {
+    color: hsl(240, 15%, 64%, 1);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 16px;
+}
+.login a {
+    color: rgb(105, 2, 248);
+}
+
+.Signup__form__block__background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgb(111, 0, 255), rgb(131, 35, 255));
+    top: 32px;
+    left: -26px;
+    border-radius: 10px;
+}
+
+@media (max-width: 955px) {
+    .Signup__block__container {
+        flex-direction: column;
+        row-gap: 60px;
+        width: 100%;
+        padding-right: 15px;
+    }
+    .Signup__block__info {
+        width: 100%;
+    }
+    .Signup__block__info__main__text {
+        max-width: 100%;
+    } 
+
+    .Signup__form__block {
+        width: 100%;
+    }
+    .Signup__form__block__body{
+        width: 100%;
+    }
+    .Signup__form__block__background {
+        left: -5px;
+        top: 30px;
+    }
+    
+}
+@media (max-width: 500px) {
+    .Signup__form__block__body {
+        width: 100%;
+    }
+}
+
+.footer {
+    margin-top: 160px;
+    box-shadow: 0 0 4px rgba(189, 189, 189, 0.849);
+}
+.footer__container {
+    padding: 40px 15px;
+}
+.footer__body {
+    display: flex;
+    gap: 40px;
+    width: 100%;
+}
+
+.footer__main__block {
+    max-width: 210px;
+}
+.footer__main__block p {
+    margin: 24px 0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left; 
+    color: #8989A2;
+}
+.footer__img {
+    background-color: #c8a6ff;
+    padding: 12px;
+    border-radius: 20px;
+}
+
+.footer__links {
+    width: 100%;
+}
+
+.footer__links__body {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    
+}
+
+.footer__links__block {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.footer__link__tittle {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+}
+.footer__link {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 12px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #5900ff;
+    line-height: 20px;
+    
+}
+
+
+@media (max-width:755px) {
+    .footer__body {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__main__block {
+        max-width: 100%;
+    }
+    .footer {
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 500px) {
+    .footer__links__body {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 40px;
+    }
+}
 
